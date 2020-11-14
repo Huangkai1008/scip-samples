@@ -1,0 +1,12 @@
+### Scheme template
+*.ss~
+*.ss#*
+.#*.ss
+
+*.scm~
+*.scm#*
+.#*.scm
+
+# IDE
+.idea
+.vscode
