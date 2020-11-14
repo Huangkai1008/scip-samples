@@ -39,3 +39,33 @@ circumference
 ;;; Section 1.1.3 Evaluating Combinations
 (* (+ 2 (* 4 6))
   (+ 3 5 7))
+
+;;; Section 1.1.4 Compound Procedures
+(define (square x) (* x x))
+(square 21)
+(square (+ 2 5))
+(define (sum-of-squares x y)
+  (+ (square x) (square y)))
+(sum-of-squares 3 4)
+(define (f a)
+  (sum-of-squares (+ a 1) (* a 2)))
+(f 5)
+
+;;; Section 1.1.5 The Substitution Model for Procedure Application
+(f 5)
+
+;;; Section 1.1.6 Conditional Expressions and Predicates
+(define (abs x)
+  (cond ((> x 0) x)
+    ((= x 0) 0)
+    ((< x 0) (- x))))
+(define (abs1 x)
+  (cond ((< x 0) (- x))
+    (else x)))
+(define (abs2 x)
+  (if (< x 0)
+    (- x)
+    x))
+(abs -3)
+(abs1 -3)
+(abs2 -3)
