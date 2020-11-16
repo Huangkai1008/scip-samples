@@ -1,8 +1,6 @@
 #lang scheme
 ;;;Section 1.1.1 Expressions
-
-;486
-
+486
 ;; `combination examples`
 ;; The leftmost element in the list is called the `operator`,
 ;; the other elements are called `operands`.
@@ -24,7 +22,6 @@
     6))
 
 ;;; Section 1.1.2 Naming and the Environment
-
 (define size 2)
 size
 (* 5 size)
